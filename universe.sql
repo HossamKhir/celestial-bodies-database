@@ -288,12 +288,45 @@ INSERT INTO public.galaxy_types VALUES (4, 'Irregular', NULL);
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.moon VALUES (1, 'The Moon', 3500, '4713-01-01 BC', 3);
+INSERT INTO public.moon VALUES (2, 'Phobos', 23, '1877-01-01', 4);
+INSERT INTO public.moon VALUES (3, 'Deimos', 12, '1877-01-01', 4);
+INSERT INTO public.moon VALUES (4, 'Metis', 43, '1979-01-01', 5);
+INSERT INTO public.moon VALUES (5, 'Adrastea', 16, '1979-01-01', 5);
+INSERT INTO public.moon VALUES (6, 'Amalthea', 167, '1892-01-01', 5);
+INSERT INTO public.moon VALUES (7, 'Thebe', 99, '1979-01-01', 5);
+INSERT INTO public.moon VALUES (8, 'Io', 3643, '1610-01-01', 5);
+INSERT INTO public.moon VALUES (9, 'Europa', 3122, '1610-01-01', 5);
+INSERT INTO public.moon VALUES (10, 'Ganymede', 5268, '1610-01-01', 5);
+INSERT INTO public.moon VALUES (11, 'Callisto', 4821, '1610-01-01', 5);
+INSERT INTO public.moon VALUES (12, 'Leda', 22, '1974-01-01', 5);
+INSERT INTO public.moon VALUES (13, 'Ersa', 3, '2018-01-01', 5);
+INSERT INTO public.moon VALUES (14, 'Himalia', 140, '1904-01-01', 5);
+INSERT INTO public.moon VALUES (15, 'Pandia', 3, '2017-01-01', 5);
+INSERT INTO public.moon VALUES (16, 'Lysithea', 42, '1938-01-01', 5);
+INSERT INTO public.moon VALUES (17, 'Elara', 80, '1905-01-01', 5);
+INSERT INTO public.moon VALUES (18, 'Dia', 4, '2000-01-01', 5);
+INSERT INTO public.moon VALUES (19, 'Carpo', 3, '2003-01-01', 5);
+INSERT INTO public.moon VALUES (20, 'Valetudo', 1, '2016-01-01', 5);
 
 
 --
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.planet VALUES (1, 'Mercury', false, 0, 1);
+INSERT INTO public.planet VALUES (2, 'Venus', false, 0, 1);
+INSERT INTO public.planet VALUES (3, 'Earth', true, 1, 1);
+INSERT INTO public.planet VALUES (4, 'Mars', false, 2, 1);
+INSERT INTO public.planet VALUES (5, 'Jupiter', false, 80, 1);
+INSERT INTO public.planet VALUES (6, 'Saturn', false, 83, 1);
+INSERT INTO public.planet VALUES (7, 'Uranus', false, 27, 1);
+INSERT INTO public.planet VALUES (8, 'Neptune', false, 14, 1);
+INSERT INTO public.planet VALUES (9, 'Ceres', false, 0, 1);
+INSERT INTO public.planet VALUES (10, 'Pluto', false, 5, 1);
+INSERT INTO public.planet VALUES (11, 'Haumea', false, 2, 1);
+INSERT INTO public.planet VALUES (12, 'Makemake', false, 1, 1);
+INSERT INTO public.planet VALUES (13, 'Eris', false, 1, 1);
 
 
 --
@@ -326,14 +359,14 @@ SELECT pg_catalog.setval('public.galaxy_types_galaxy_types_id_seq', 4, true);
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 1, false);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 20, true);
 
 
 --
 -- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_planet_id_seq', 1, false);
+SELECT pg_catalog.setval('public.planet_planet_id_seq', 13, true);
 
 
 --
